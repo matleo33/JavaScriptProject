@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-document.getElementById('buttonMeteo').addEventListener('click',function () {
+function appelWeather() {
     var page = "http://api.openweathermap.org/data/2.5/weather?q="+document.getElementById('ville').value+"&APPID=baba13f455b4b825452802461eabb87a";
     var requeteAjax = new XMLHttpRequest();
     if (requeteAjax != null) {
@@ -27,4 +27,7 @@ document.getElementById('buttonMeteo').addEventListener('click',function () {
     {
         window.alert("Pas de support AJAX");
     }
-});
+}
+/*document.getElementById('meteo').addEventListener('click',function () {
+
+});*/
