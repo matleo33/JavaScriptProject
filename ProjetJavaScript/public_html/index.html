@@ -16,6 +16,7 @@ and open the template in the editor.
         <script src ="JS/Sport.js"></script>
         <script src ="JS/Twitter.js"></script>
         <script src ="JS/Youtube.js"></script>
+
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body onload="window.setInterval(affichageHeure,1000)">
@@ -24,7 +25,19 @@ and open the template in the editor.
             <div id="horloge"></div>
         </div>
         <div id="widgetMaps">
-            Maps
+            <div id="floating-panel">
+                <b>Ville de départ :</b>
+                <input type="text" name="depart" id="depart">
+                <input id="buttonTrajet" type="button" value="Afficher le trajet"><br>
+                <b>Mode de voyage: </b>
+                <select id="mode">
+                    <option value="DRIVING">Voiture</option>
+                    <option value="WALKING">Marche à pied</option>
+                    <option value="BICYCLING">Vélo</option>
+                    <option value="TRANSIT">Transport en commun</option>
+                </select>
+            </div>
+            <div id="map"></div>
         </div>
         <div id="widgetMeteo">
             Meteo
