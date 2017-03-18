@@ -9,16 +9,37 @@ and open the template in the editor.
         <title>Projet JavaScript BERWIT/LEOTHAUD</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript">
-            Aujourdhui = new Date;
-            Jour = Aujourdhui.getDate();
-            Mois = (Aujourdhui.getMonth())+1;
-            Annee = Aujourdhui.getFullYear();
-            document.writeln("Nous sommes le : " + Jour + "/" + Mois + "/" + Annee + "<br>");
-        </script>
+        <script src ="JS/Heure.js"></script>
+        <script src ="JS/Maps.js"></script>
+        <script src ="JS/Meteo.js"></script>
+        <script src ="JS/Photo.js"></script>
+        <script src ="JS/Sport.js"></script>
+        <script src ="JS/Twitter.js"></script>
+        <script src ="JS/Youtube.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <div>Site à faire</div>
+        <div id="widgetTemps">
+            Temps
+        </div>
+        <div id="widgetMaps">
+            Maps
+        </div>
+        <div id="widgetMeteo">
+            Meteo
+        </div>
+        <div id="widgetPhoto">
+            Photo
+        </div>
+        <div id="widgetSport">
+            Sport
+        </div>
+        <div id="widgetTwitter">
+            Twitter
+        </div>
+        <div id="widgetYoutube">
+            Youtube
+             <iframe id="ytplayer" src="http://www.youtube.com/embed?listType=search&list=Mike Posner"/>
+        </div>
     </body>
 </html>
