@@ -4,4 +4,8 @@
  * and open the template in the editor.
  */
 
-
+function affichageHeure() {
+    var d = new Date();
+    var horloge = document.getElementById("horloge");
+    horloge.innerHTML=d.toLocaleDateString()+'  '+d.toLocaleTimeString();
+}

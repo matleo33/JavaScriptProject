@@ -18,9 +18,10 @@ and open the template in the editor.
         <script src ="JS/Youtube.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-    <body>
+    <body onload="window.setInterval(affichageHeure,1000)">
         <div id="widgetTemps">
-            Temps
+            Temps</br>
+            <div id="horloge"></div>
         </div>
         <div id="widgetMaps">
             Maps
@@ -34,8 +35,9 @@ and open the template in the editor.
         <div id="widgetSport">
             Sport
         </div>
-        <div id="widgetTwitter">
-            Twitter
+        <div id="widgetTwitter" style="width:400px;height:350px;float:left;padding:20px;">
+            <a class="twitter-timeline" height="400" href="https://twitter.com/MichelBillaud">Tweets by MichelBillaud</a>
+            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
         <div id="widgetYoutube">
             <button onclick="afficherYoutube">Youtube</button>
