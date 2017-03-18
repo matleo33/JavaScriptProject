@@ -12,11 +12,11 @@ function appelWeather() {
             if (requeteAjax.readyState === XMLHttpRequest.DONE) {
                 if (requeteAjax.status === 200) {
                     var json = JSON.parse(requeteAjax.responseText);
-                    var text = 'Ville :'+ json.name
-                        + '\n Temps :' + json.weather[0].description
-                        + '\n Tempèrature :'+ (parseInt(json.main.temp)-273.15).toString().substring(0,5)+'°C'
-                        + "\n Max :" + (parseInt(json.main.temp_max)-273.15).toString().substring(0,5)+'°C' + ' Min :'+(parseInt(json.main.temp_min)-273.15).toString().substring(0,5)+'°C'
-                        + "\n Humidité :"+json.main.humidity + '%';
+                    var text = 'Ville : '+ json.name
+                        + '\n Temps : ' + json.weather[0].description
+                        + '\n Température : '+ (parseInt(json.main.temp)-273.15).toString().substring(0,5)+'°C'
+                        + "\n Max : " + (parseInt(json.main.temp_max)-273.15).toString().substring(0,5)+'°C' + ' Min :'+(parseInt(json.main.temp_min)-273.15).toString().substring(0,5)+'°C'
+                        + "\n Humidité : "+json.main.humidity + '%';
                     document.getElementById('result').innerText=text;
                 }
             }
