@@ -28,6 +28,3 @@ function appelWeather() {
         window.alert("Pas de support AJAX");
     }
 }
-/*document.getElementById('meteo').addEventListener('click',function () {
-
-});*/
