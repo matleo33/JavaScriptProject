@@ -9,9 +9,14 @@ and open the template in the editor.
         <title>Projet JavaScript BERWIT/LEOTHAUD</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script>
-            //Ce genre de script
+        <script type="text/javascript">
+            Aujourdhui = new Date;
+            Jour = Aujourdhui.getDate();
+            Mois = (Aujourdhui.getMonth())+1;
+            Annee = Aujourdhui.getFullYear();
+            document.writeln("Nous sommes le : " + Jour + "/" + Mois + "/" + Annee + "<br>");
         </script>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <div>Site à faire</div>
