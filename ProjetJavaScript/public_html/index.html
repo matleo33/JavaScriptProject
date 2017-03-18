@@ -54,7 +54,12 @@ and open the template in the editor.
             <div id="map"></div>
         </div>
         <div id="widgetMeteo" class="col-lg-2">
-            Meteo
+            <form action="" method="get">
+                <b>Ville :</b>
+                <input type="text" name="ville" id="ville">
+                <input id="buttonMeteo" type="button" value="Valider">
+            </form>
+            <div id="result"></div>
         </div>
         <div id="widgetPhoto" class="col-lg-2">
             Photo

@@ -18,7 +18,14 @@ html, body {
     width: 600px;
     height:400px;
 }
-
+#widgetMeteo{
+    width: 300px;
+    height: 400px;
+}
+#result{
+    width: 300px;
+    height:200px;
+}
 #map{
     height: 100%;
 }
