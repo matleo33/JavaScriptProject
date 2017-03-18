@@ -35,3 +35,13 @@ html, body {
     width: 600px;
     height: 400px;
 }
+
+.twitter-timeline {
+
+}
+
+#widgetTwitter {
+    width:400px;
+    height:350px;
+    padding:20px;
+}

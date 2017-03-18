@@ -18,13 +18,27 @@ and open the template in the editor.
         <script src ="JS/Youtube.js"></script>
 
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     </head>
     <body onload="window.setInterval(affichageHeure,1000)">
-        <div id="widgetTemps">
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Projet JS BERWOTHAUD</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</nav>
+        <div id="widgetTemps" class="col-lg-2">
             Temps</br>
             <div id="horloge"></div>
         </div>
-        <div id="widgetMaps">
+        <div id="widgetMaps" class="col-lg-5">
             <div id="floating-panel">
                 <b>Ville de départ :</b>
                 <input type="text" name="depart" id="depart">
@@ -39,17 +53,19 @@ and open the template in the editor.
             </div>
             <div id="map"></div>
         </div>
-        <div id="widgetMeteo">
+        <div id="widgetMeteo" class="col-lg-2">
             Meteo
         </div>
-        <div id="widgetPhoto">
+        <div id="widgetPhoto" class="col-lg-2">
             Photo
         </div>
-        <div id="widgetSport">
+        <div id="widgetSport" class="col-lg-2">
             Sport
         </div>
-        <div id="widgetTwitter" style="width:400px;height:350px;float:left;padding:20px;">
-            <a class="twitter-timeline" height="400" href="https://twitter.com/MichelBillaud">Tweets by MichelBillaud</a>
+        <div id="widgetTwitter" class="col-lg-2">
+            <a class="twitter-timeline" height="400" href="https://twitter.com/MichelBillaud">
+                Tweets by MichelBillaud
+            </a>
             <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
         <div id="widgetYoutube">
