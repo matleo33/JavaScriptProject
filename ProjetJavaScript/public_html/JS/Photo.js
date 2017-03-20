@@ -11,6 +11,6 @@ function AfficherPhoto() {
         tagmode: "any",
         format : "json"}).done(function(reponse)
     {
-        //parser json
+        var image = reponse.items[0].media;
     });
 }
