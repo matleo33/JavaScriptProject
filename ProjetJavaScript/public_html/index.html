@@ -57,13 +57,16 @@ and open the template in the editor.
                 <button type="button" class="btn btn-default" onclick="AfficherWidget()" id="youtubeB">Youtube</button>
             </li>
         </ul>
-        
-        <div id="widgetTemps" class="col-lg-12">
-            Temps</br>
-            <div id="horloge"></div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Temps
+            </div>
+            <div class="panel-body" id="horloge">
+                
+            </div>
         </div>
-        <div id="widgetMaps" class="col-lg-12">
-            <div id="floating-panel">
+        <div id="widgetMaps" class="panel-default panel">
+            <div id="floating-panel" class="panel-heading">
                 <b>Ville de départ :</b>
                 <input type="text" name="depart" id="depart">
                 <input id="buttonTrajet" type="button" value="Afficher le trajet"><br>
@@ -75,29 +78,44 @@ and open the template in the editor.
                     <option value="TRANSIT">Transport en commun</option>
                 </select>
             </div>
-            <div id="map"></div>
+            <div id="map" class="panel-body">
+                
+            </div>
         </div>
-        <div id="widgetMeteo" class="col-lg-12" style="height: 100%">
-            <form action="" method="get">
-                <b>Ville :</b>
-                <input type="text" name="ville" id="ville">
-                <input id="meteo" type="button" value="Valider" onclick="appelWeather()">
-            </form>
-            <div id="result"></div>
+        <div id="widgetMeteo" class="panel-default panel">
+            <div class="panel-title">
+                <form action="" method="get">
+                    <b>Ville :</b>
+                    <input type="text" name="ville" id="ville">
+                    <input id="meteo" type="button" value="Valider" onclick="appelWeather()">
+                </form>
+            </div>
+            <div id="result" class="panel-body">
+                
+            </div>
         </div>
-        <div id="widgetPhoto" class="col-lg-12">
-            Photo
+        <div id="widgetPhoto" class="panel-default panel">
+            <div class="panel-title">
+                Photo
+            </div>
+            
         </div>
-        <div id="widgetSport" class="col-lg-12">
-            Sport
+        <div id="widgetSport" class="panel-default panel2">
+            <div class="panel-title">
+                Sport
+            </div>
         </div>
-        <div id="widgetTwitter" class="col-lg-12">
-            <a class="twitter-timeline" height="400" href="https://twitter.com/MichelBillaud">
-                Tweets by MichelBillaud
-            </a>
-            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div id="widgetTwitter" class="panel-default panel">
+            <div class="panel-title">
+                <a class="twitter-timeline" height="400" href="https://twitter.com/MichelBillaud">
+                    Tweets by MichelBillaud
+                </a>
+            </div>
+            <div class="panel-body">
+                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
         </div>
-        <div id="widgetYoutube">
+        <div id="widgetYoutube" class="panel-default panel">
             <input type="text" id="recherche" name="recherche">
             <input id="youtube" type="button" value="Recherche Youtube" onclick="rechercheYoutube()">
         </div>
