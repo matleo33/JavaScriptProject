@@ -6,11 +6,11 @@
 
 
 function rechercheYoutube() {
+    //document.getElementById('widgetYoutube').remove(document.getElementById('ytplayer'));
+
     var recherche = document.getElementById('recherche').value;
-    var scr = "<iframe id=\"ytplayer\" src=\"http://www.youtube.com/embed?listType=search&list="+recherche+"/>";
-    var script = document.createElement('script');
-    script.src = scr;
-    script.defer = true;
-    script.async = true;
-    document.getElementsByTagName('head')[0].appendChild(script);
+    var iframe = document.createElement('iframe');
+    iframe.id ="ytplayer";
+    iframe.src = "http://www.youtube.com/embed?listType=search&list="+recherche;
+    document.getElementById('widgetYoutube').appendChild(iframe);
 }
