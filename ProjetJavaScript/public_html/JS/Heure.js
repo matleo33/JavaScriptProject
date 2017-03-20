@@ -5,6 +5,10 @@
  */
 
 function affichageHeure() {
+    window.setInterval(affichageHeureB,1000)
+}
+
+function affichageHeureB() {
     var d = new Date();
     var horloge = document.getElementById("horloge");
     horloge.innerHTML=d.toLocaleDateString()+'  '+d.toLocaleTimeString();

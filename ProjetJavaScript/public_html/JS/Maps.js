@@ -4,6 +4,14 @@
  * and open the template in the editor.
  */
 
+function afficherMaps() {
+    //AFFICHER LA MAP
+    document.getElementById(widgetMaps);
+    
+    
+    initMap();
+}
+
 function initMap() {
     var directionsDisplay = new google.maps.DirectionsRenderer;
     var directionsService = new google.maps.DirectionsService;

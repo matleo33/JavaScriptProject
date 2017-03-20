@@ -20,7 +20,7 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     </head>
-    <body onload="window.setInterval(affichageHeure,1000)">
+    <body>
     <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -36,10 +36,10 @@ and open the template in the editor.
 </nav>
         <ul>
             <li>
-                <button type="button" class="btn btn-default" onclick="AfficherWidget()" id="HorlogeB">Horloge</button>
+                <button type="button" class="btn btn-default" onclick="affichageHeure()" id="HorlogeB">Horloge</button>
             </li>
             <li>
-                <button type="button" class="btn btn-default" onclick="AfficherWidget()" id="MapsB">Maps</button>
+                <button type="button" class="btn btn-default" onclick="afficherMaps()" id="MapsB">Maps</button>
             </li>
             <li>
                 <button type="button" class="btn btn-default" onclick="AfficherWidget()" id="MeteoB">Meteo</button>
@@ -57,6 +57,7 @@ and open the template in the editor.
                 <button type="button" class="btn btn-default" onclick="AfficherWidget()" id="youtubeB">Youtube</button>
             </li>
         </ul>
+        
         <div id="widgetTemps" class="col-lg-12">
             Temps</br>
             <div id="horloge"></div>
