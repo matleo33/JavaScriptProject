@@ -4,12 +4,8 @@
  * and open the template in the editor.
  */
 
-function afficherMaps() {
-    //AFFICHER LA MAP
-    document.getElementById(widgetMaps);
-    
-    
-    initMap();
+function supprimerCarte() {
+   document.getElementById("widgetMaps").remove();
 }
 
 function initMap() {

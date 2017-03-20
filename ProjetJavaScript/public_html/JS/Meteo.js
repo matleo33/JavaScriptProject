@@ -33,3 +33,7 @@ function appelWeather() {
         window.alert("Pas de support AJAX");
     }
 }
+
+function supprimerMeteo() {
+    document.getElementById("widgetMeteo").remove();
+}

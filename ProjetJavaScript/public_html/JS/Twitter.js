@@ -5,3 +5,6 @@
  */
 
 
+function supprimerTwitter() {
+    document.getElementById("widgetTwitter").remove();
+}

@@ -18,3 +18,7 @@ function appelPhoto() {
 
     });
 }
+
+function supprimerPhoto() {
+    document.getElementById("widgetPhoto").remove();
+}

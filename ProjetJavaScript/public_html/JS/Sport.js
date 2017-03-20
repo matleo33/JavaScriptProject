@@ -25,3 +25,7 @@ function appelSport() {
 
     });
 }
+
+function supprimerSport() {
+    document.getElementById("widgetSport").remove();
+}

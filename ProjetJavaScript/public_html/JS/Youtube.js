@@ -18,3 +18,7 @@ function rechercheYoutube() {
     iframe.src = "http://www.youtube.com/embed?listType=search&list="+recherche;
     parent.appendChild(iframe);
 }
+
+function supprimerYoutube() {
+    document.getElementById("widgetYoutube").remove();
+}
