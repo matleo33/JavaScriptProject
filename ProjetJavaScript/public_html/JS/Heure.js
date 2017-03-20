@@ -5,7 +5,9 @@
  */
 
 function AfficherHeure() {
-    $('body').append($('<div id="DivTemps" class="col-md-3"> <div class="panel panel-primary"> <div class="panel-heading clearfix"> <span style="float:right" onclick="supprimerHeure()">&times;</span>Temps </div> <div class="panel-body" id="horloge"> </div> </div> </div>'));
+    if (document.getElementById('DivTemps') == null) {
+        $('body').append($('<div id="DivTemps" class="col-md-3"> <div class="panel panel-primary"> <div class="panel-heading clearfix"> <span style="float:right" onclick="supprimerHeure()">&times;</span>Temps </div> <div class="panel-body" id="horloge"> </div> </div> </div>'));
+    }
 }
 
 function affichageHeureB() {
