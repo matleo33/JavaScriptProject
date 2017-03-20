@@ -61,7 +61,7 @@ and open the template in the editor.
             Temps</br>
             <div id="horloge"></div>
         </div>
-        <div id="widgetMaps" class="col-lg-5">
+        <div id="widgetMaps" class="col-lg-12">
             <div id="floating-panel">
                 <b>Ville de départ :</b>
                 <input type="text" name="depart" id="depart">
@@ -76,7 +76,7 @@ and open the template in the editor.
             </div>
             <div id="map"></div>
         </div>
-        <div id="widgetMeteo" class="col-lg-2" style="height: 100%">
+        <div id="widgetMeteo" class="col-lg-12" style="height: 100%">
             <form action="" method="get">
                 <b>Ville :</b>
                 <input type="text" name="ville" id="ville">
@@ -84,13 +84,13 @@ and open the template in the editor.
             </form>
             <div id="result"></div>
         </div>
-        <div id="widgetPhoto" class="col-lg-2">
+        <div id="widgetPhoto" class="col-lg-12">
             Photo
         </div>
-        <div id="widgetSport" class="col-lg-2">
+        <div id="widgetSport" class="col-lg-12">
             Sport
         </div>
-        <div id="widgetTwitter" class="col-lg-2">
+        <div id="widgetTwitter" class="col-lg-12">
             <a class="twitter-timeline" height="400" href="https://twitter.com/MichelBillaud">
                 Tweets by MichelBillaud
             </a>
@@ -98,9 +98,8 @@ and open the template in the editor.
         </div>
         <div id="widgetYoutube">
             Votre recherche
-            <input></input>
-            <button onclick="afficherYoutube">Youtube</button>
-             <iframe id="ytplayer" src="http://www.youtube.com/embed?listType=search&list=Mike Posner"/>
+            <input type="text" name="recherche">
+            <button onclick="rechercheYoutube">Youtube</button>
         </div>
     </body>
 </html>
