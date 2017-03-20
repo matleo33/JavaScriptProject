@@ -6,8 +6,11 @@
 
 
 function rechercheYoutube() {
-    //document.getElementById('widgetYoutube').remove(document.getElementById('ytplayer'));
-
+    var exist = false;
+    if(document.getElementById('ytplayer')!=null)
+    {
+        document.getElementById('ytplayer').parentNode.removeChild(document.getElementById('ytplayer'));
+    }
     var recherche = document.getElementById('recherche').value;
     var iframe = document.createElement('iframe');
     iframe.id ="ytplayer";
