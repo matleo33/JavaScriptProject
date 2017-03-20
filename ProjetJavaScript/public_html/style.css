@@ -27,12 +27,6 @@ html, body {
     height: 400px;
 }
 
-
-#widgetTwitter {
-    width:400px;
-    height:350px;
-}
-
 li {
     list-style: none;
     display: inline-block;

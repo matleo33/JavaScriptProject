@@ -58,7 +58,7 @@ and open the template in the editor.
             </li>
         </ul>
     <div class="container">
-        <div class="col-lg-3">
+        <div class="col-md-3">
             <div class="panel panel-primary">
                 <div class="panel-heading clearfix">
                     Temps
@@ -69,7 +69,7 @@ and open the template in the editor.
             </div>
         </div>
 
-        <div class="col-lg-3">
+        <div class="col-md-3">
             <div id="widgetMeteo" class="panel panel-default">
                 <div class="panel-heading">Meteo</div>
                 <div class="panel-body">
@@ -83,7 +83,7 @@ and open the template in the editor.
             </div>
         </div>
 
-        <div class="col-lg-3">
+        <div class="col-md-3">
             <div id="widgetPhoto" class="panel panel-default">
                 <div class="panel-heading">Photo</div>
                 <div class="panel-body" id="reponse">
@@ -92,7 +92,7 @@ and open the template in the editor.
             </div>
         </div>
 
-        <div class="col-lg-3">
+        <div class="col-md-3">
             <div id="widgetSport" class="panel panel-default">
                 <div class="panel-heading">Sport</div>
                 <div class="panel-body">
@@ -100,7 +100,7 @@ and open the template in the editor.
                 </div>
             </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-md-6">
             <div id="widgetMaps" class="panel panel-default">
                 <div class="panel-heading clearfix">
                     Carte
@@ -118,17 +118,19 @@ and open the template in the editor.
                             <option value="TRANSIT">Transport en commun</option>
                         </select>
                     </div>
+                </div>
+                <div class="panel-body">
                     <div id="map"></div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-md-4">
             <div id="widgetTwitter" class="panel panel-default">
                 <div class="panel-heading">
                     Twitter
                 </div>
                 <div class="panel-body">
-                    <a class="twitter-timeline" height="400" href="https://twitter.com/MichelBillaud">
+                    <a class="twitter-timeline" height="400px" href="https://twitter.com/MichelBillaud">
                         Tweets by MichelBillaud
                     </a>
                     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -136,14 +138,17 @@ and open the template in the editor.
             </div>
         </div>
 
-        <div class="col-lg-3">
+        <div class="col-md-7">
             <div id="widgetYoutube" class="panel panel-default">
                 <div class="panel-heading">
                     Youtube
                 </div>
                 <div class="panel-body">
                     <input type="text" id="recherche" name="recherche">
-                    <input id="youtube" type="button" value="Recherche Youtube" onclick="rechercheYoutube()">
+                    <input id="youtube" type="button"  value="Recherche Youtube" onclick="rechercheYoutube()">
+                </div>
+                <div class="panel-body">
+                    <iframe id="ytplayer"  src="http://www.youtube.com/embed?listType=search&list=Choisir"></iframe>
                 </div>
             </div>
         </div>
