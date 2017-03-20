@@ -3,6 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
+function AfficherMeteo() {
+    
+}
+
 function appelWeather() {
     var page = "http://api.openweathermap.org/data/2.5/weather?q="+document.getElementById('ville').value+"&APPID=baba13f455b4b825452802461eabb87a&units=metric";
     var requeteAjax = new XMLHttpRequest();

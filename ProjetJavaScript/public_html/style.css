@@ -13,14 +13,6 @@ html, body {
     margin: 0;
     padding: 0;
 }
-#widgetMaps{
-    float: left;
-    width: 600px;
-    height:400px;
-}
-#map{
-    height: 100%;
-}
 #floating-panel {
     z-index: 5;
     background-color: #fff;
@@ -50,3 +42,12 @@ li {
     display: inline-block;
 }
 
+#map {
+    height: 400px;
+    width : 500px;
+}
+
+#widgetMaps {
+    height: 500px;
+    width : 500px;
+}
