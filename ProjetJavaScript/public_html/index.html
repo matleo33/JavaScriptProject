@@ -21,7 +21,7 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     </head>
-    <body onload="appelSport()">
+    <body onload="appelSport();window.setInterval(affichageHeureB,1000)">
     <nav class="navbar navbar-primary">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -59,11 +59,11 @@ and open the template in the editor.
             </li>
         </ul>
     <div class="container">
-        <div class="col-md-3">
-            <div id="DivTemps" class="panel panel-primary">
+        <div id="DivTemps" class="col-md-3">
+            <div class="panel panel-primary">
 
                 <div class="panel-heading clearfix">
-                    <span style="float:right" onclick="supprimerTemps()">&times;</span>
+                    <span style="float:right" onclick="supprimerHeure()">&times;</span>
                     Temps
                 </div>
                 <div class="panel-body" id="horloge">
