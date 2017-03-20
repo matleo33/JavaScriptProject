@@ -21,7 +21,7 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     </head>
-    <body>
+    <body onload="appelSport()">
     <nav class="navbar navbar-primary">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -110,6 +110,9 @@ and open the template in the editor.
                 <div class="panel-heading">
                     Sport
                     <span style="float:right" onclick="supprimerWidget()">&times;</span>
+                </div>
+                <div class="panel-body">
+                    Dernier résultat du Bayern :
                 </div>
                 <div class="panel-body">
                     <div id="resultSport"></div>

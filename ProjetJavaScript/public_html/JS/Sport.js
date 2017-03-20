@@ -4,26 +4,24 @@
  * and open the template in the editor.
  */
 
-
-function appelSport()
-{
-    var requeteAjax = new XMLHttpRequest();
-    if (requeteAjax != null) {
-        requeteAjax.open("GET",'http://api.football-data.org/v1/teams/5/fixtures', true);
-        requeteAjax.addEventListener('readystatechange',function () {
-            if (requeteAjax.readyState === XMLHttpRequest.DONE) {
-                if (requeteAjax.status === 200) {
-                    var json = JSON.parse(requeteAjax.responseText);
-                    alert(json);
-                    var text = json.homeTeamName + " : " + json.result.goalsHomeTeam +" - "+ json.result.goalsAwayTeam +" "+ json.awayTeamName;
-                    document.getElementById('resultSport').innerText=text;
-                }
+function appelSport() {
+    $.ajax({
+        headers: { 'X-Auth-Token': '3a7ad2fb51324516978c911202db744c' },
+        url: 'http://api.football-data.org/v1/teams/5/fixtures',
+        dataType: 'json',
+        type: 'GET',
+    }).done(function(response) {
+        var dernierRes = null;
+        for(var i=0;i<response.fixtures.length;i++)
+        {
+            if(response.fixtures[i].result.goalsHomeTeam == null)
+            {
+                dernierRes = i-1;
+                break;
             }
-        });
-        requeteAjax.send();
-    }
-    else
-    {
-        window.alert("Pas de support AJAX");
-    }
+        }
+        var text =response.fixtures[dernierRes].homeTeamName + " : " + response.fixtures[dernierRes].result.goalsHomeTeam +" - "+ response.fixtures[dernierRes].result.goalsAwayTeam +" "+ response.fixtures[dernierRes].awayTeamName;
+        document.getElementById('resultSport').innerText+=text +"\n";
+
+    });
 }
