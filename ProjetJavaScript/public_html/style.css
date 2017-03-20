@@ -27,14 +27,10 @@ html, body {
     height: 400px;
 }
 
-.twitter-timeline {
-
-}
 
 #widgetTwitter {
     width:400px;
     height:350px;
-    padding:20px;
 }
 
 li {
@@ -44,10 +40,5 @@ li {
 
 #map {
     height: 400px;
-    width : 500px;
-}
-
-#widgetMaps {
-    height: 500px;
     width : 500px;
 }

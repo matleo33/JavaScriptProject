@@ -14,6 +14,7 @@ function appelSport()
             if (requeteAjax.readyState === XMLHttpRequest.DONE) {
                 if (requeteAjax.status === 200) {
                     var json = JSON.parse(requeteAjax.responseText);
+                    alert(json);
                     var text = json.homeTeamName + " : " + json.result.goalsHomeTeam +" - "+ json.result.goalsAwayTeam +" "+ json.awayTeamName;
                     document.getElementById('resultSport').innerText=text;
                 }
