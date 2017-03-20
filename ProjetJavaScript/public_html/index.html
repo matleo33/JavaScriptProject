@@ -22,7 +22,7 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     </head>
     <body>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-primary">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Projet JS BERWIT / LEOTHAUD</a>
@@ -37,7 +37,7 @@ and open the template in the editor.
 </nav>
         <ul>
             <li>
-                <button type="button" class="btn btn-default" onclick="a=AfficherHeure()" id="HorlogeB">Horloge</button>
+                <button type="button" class="btn btn-default" onclick="AfficherHeure()" id="HorlogeB">Horloge</button>
             </li>
             <li>
                 <button type="button" class="btn btn-default" onclick="afficherMaps()" id="MapsB">Maps</button>
@@ -61,7 +61,9 @@ and open the template in the editor.
     <div class="container">
         <div class="col-md-3">
             <div class="panel panel-primary">
+
                 <div class="panel-heading clearfix">
+                    <span style="float:right" onclick="supprimerWidget()">&times;</span>
                     Temps
                 </div>
                 <div class="panel-body" id="horloge">
@@ -71,8 +73,11 @@ and open the template in the editor.
         </div>
 
         <div class="col-md-3">
-            <div id="widgetMeteo" class="panel panel-default">
-                <div class="panel-heading">Meteo</div>
+            <div id="widgetMeteo" class="panel panel-primary">
+                <div class="panel-heading">
+                    Meteo
+                    <span style="float:right" onclick="supprimerWidget()">&times;</span>
+                </div>
                 <div class="panel-body">
                     <form action="" method="get">
                         <b>Ville :</b>
@@ -85,8 +90,11 @@ and open the template in the editor.
         </div>
 
         <div class="col-md-3">
-            <div id="widgetPhoto" class="panel panel-default">
-                <div class="panel-heading">Photo</div>
+            <div id="widgetPhoto" class="panel panel-primary">
+                <div class="panel-heading">
+                    Photo
+                    <span style="float:right" onclick="supprimerWidget()">&times;</span>
+                </div>
                 <div class="panel-body">
                     <input type="text" name="recherchePhoto" id="searchPhoto">
                     <input id="buttonPhoto" type="button" onclick="appelPhoto()" value="Les photos"><br>
@@ -98,17 +106,21 @@ and open the template in the editor.
         </div>
 
         <div class="col-md-3">
-            <div id="widgetSport" class="panel panel-default">
-                <div class="panel-heading">Sport</div>
+            <div id="widgetSport" class="panel panel-primary">
+                <div class="panel-heading">
+                    Sport
+                    <span style="float:right" onclick="supprimerWidget()">&times;</span>
+                </div>
                 <div class="panel-body">
                     <div id="resultSport"></div>
                 </div>
             </div>
         </div>
         <div class="col-md-6">
-            <div id="widgetMaps" class="panel panel-default">
+            <div id="widgetMaps" class="panel panel-primary">
                 <div class="panel-heading clearfix">
                     Carte
+                    <span style="float:right" onclick="supprimerWidget()">&times;</span>
                 </div>
                 <div class="panel-body">
                     <div id="floating-panel">
@@ -130,9 +142,10 @@ and open the template in the editor.
             </div>
         </div>
         <div class="col-md-4">
-            <div id="widgetTwitter" class="panel panel-default">
+            <div id="widgetTwitter" class="panel panel-primary">
                 <div class="panel-heading">
                     Twitter
+                    <span style="float:right" onclick="supprimerWidget()">&times;</span>
                 </div>
                 <div class="panel-body">
                     <a class="twitter-timeline" height="400px" href="https://twitter.com/MichelBillaud">
@@ -144,9 +157,10 @@ and open the template in the editor.
         </div>
 
         <div class="col-md-7">
-            <div id="widgetYoutube" class="panel panel-default">
+            <div id="widgetYoutube" class="panel panel-primary">
                 <div class="panel-heading">
                     Youtube
+                    <span style="float:right" onclick="supprimerWidget()">&times;</span>
                 </div>
                 <div class="panel-body">
                     <input type="text" id="recherche" name="recherche">
