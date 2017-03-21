@@ -4,12 +4,6 @@
  * and open the template in the editor.
  */
 
-function AfficherSport() {
-    if (document.getElementById("widgetSport") == null) {
-        $('body').append($('<div class="col-md-3" id="widgetSport"><div class="panel panel-primary"><div class="panel-heading">Sport<span style="float:right" onclick="supprimerSport()">&times;</span></div><div class="panel-body">Dernier résultat du Bayern :</div><div class="panel-body"><div id="resultSport"></div></div></div></div>'));
-    }
-}
-
 function appelSport() {
     $.ajax({
         headers: { 'X-Auth-Token': '3a7ad2fb51324516978c911202db744c' },
@@ -33,5 +27,11 @@ function appelSport() {
 }
 
 function supprimerSport() {
-    document.getElementById("widgetSport").remove();
+    $("#widgetSport").click(function(){
+        $("#widgetSport").hide();
+    });
+}
+
+function AfficherSport() {
+        $("#widgetSport").show();
 }

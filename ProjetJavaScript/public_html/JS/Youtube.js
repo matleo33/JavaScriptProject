@@ -19,6 +19,13 @@ function rechercheYoutube() {
     parent.appendChild(iframe);
 }
 
+
 function supprimerYoutube() {
-    document.getElementById("widgetYoutube").remove();
+    $("#widgetYoutube").click(function(){
+        $("#widgetYoutube").hide();
+    });
+}
+
+function AfficherYoutube() {
+    $("#widgetYoutube").show();
 }

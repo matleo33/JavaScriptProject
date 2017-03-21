@@ -6,5 +6,11 @@
 
 
 function supprimerTwitter() {
-    document.getElementById("widgetTwitter").remove();
+    $("#widgetTwitter").click(function(){
+        $("#widgetTwitter").hide();
+    });
+}
+
+function AfficherTwitter() {
+    $("#widgetTwitter").show();
 }

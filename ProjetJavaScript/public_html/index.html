@@ -40,7 +40,7 @@ and open the template in the editor.
                 <button type="button" class="btn btn-default" onclick="AfficherHeure()" id="HorlogeB">Horloge</button>
             </li>
             <li>
-                <button type="button" class="btn btn-default" onclick="afficherMaps()" id="MapsB">Maps</button>
+                <button type="button" class="btn btn-default" onclick="AfficherMaps()" id="MapsB">Maps</button>
             </li>
             <li>
                 <button type="button" class="btn btn-default" onclick="AfficherMeteo()" id="MeteoB">Meteo</button>
@@ -59,7 +59,7 @@ and open the template in the editor.
             </li>
         </ul>
     <div id="contain" class="container">
-        <div id="DivTemps" class="col-md-3">
+        <div id="widgetTemps" class="col-md-3">
             <div class="panel panel-primary">
 
                 <div class="panel-heading clearfix">
@@ -72,8 +72,8 @@ and open the template in the editor.
             </div>
         </div>
 
-        <div class="col-md-3">
-            <div id="widgetMeteo" class="panel panel-primary">
+        <div id="widgetMeteo" class="col-md-3">
+            <div  class="panel panel-primary">
                 <div class="panel-heading">
                     Meteo
                     <span style="float:right" onclick="supprimerMeteo()">&times;</span>
@@ -89,8 +89,8 @@ and open the template in the editor.
             </div>
         </div>
 
-        <div class="col-md-3">
-            <div id="widgetPhoto" class="panel panel-primary">
+        <div id="widgetPhoto" class="col-md-3">
+            <div class="panel panel-primary">
                 <div class="panel-heading">
                     Photo
                     <span style="float:right" onclick="supprimerPhoto()">&times;</span>
@@ -99,13 +99,13 @@ and open the template in the editor.
                     <input type="text" name="recherchePhoto" id="searchPhoto">
                     <input id="buttonPhoto" type="button" onclick="appelPhoto()" value="Les photos"><br>
                 </div>
-                <div class="panel-body" id="photo">
-                    
+                <div class="panel-body">
+                    <div id="photo"></div>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-3" id="widgetSport">
+        <div id="widgetSport" class="col-md-3">
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     Sport
@@ -119,8 +119,8 @@ and open the template in the editor.
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div id="widgetMaps" class="panel panel-primary">
+        <div id="widgetMaps" class="col-md-6">
+            <div class="panel panel-primary">
                 <div class="panel-heading clearfix">
                     Carte
                     <span style="float:right" onclick="supprimerCarte()">&times;</span>
@@ -144,8 +144,8 @@ and open the template in the editor.
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div id="widgetTwitter" class="panel panel-primary">
+        <div id="widgetTwitter" class="col-md-4">
+            <div class="panel panel-primary">
                 <div class="panel-heading">
                     Twitter
                     <span style="float:right" onclick="supprimerTwitter()">&times;</span>
@@ -159,8 +159,8 @@ and open the template in the editor.
             </div>
         </div>
 
-        <div class="col-md-7">
-            <div id="widgetYoutube" class="panel panel-primary">
+        <div id="widgetYoutube" class="col-md-7">
+            <div  class="panel panel-primary">
                 <div class="panel-heading">
                     Youtube
                     <span style="float:right" onclick="supprimerYoutube()">&times;</span>

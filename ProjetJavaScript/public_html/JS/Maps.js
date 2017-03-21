@@ -5,7 +5,13 @@
  */
 
 function supprimerCarte() {
-   document.getElementById("widgetMaps").remove();
+    $("#widgetMaps").click(function(){
+        $("#widgetMaps").hide();
+    });
+}
+
+function AfficherMaps() {
+    $("#widgetMaps").show();
 }
 
 function initMap() {

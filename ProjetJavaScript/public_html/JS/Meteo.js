@@ -3,9 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+function supprimerMeteo() {
+    $("#widgetMeteo").click(function(){
+        $("#widgetMeteo").hide();
+    });
+}
 
 function AfficherMeteo() {
-    
+    $("#widgetMeteo").show();
 }
 
 function appelWeather() {
@@ -32,8 +37,4 @@ function appelWeather() {
     {
         window.alert("Pas de support AJAX");
     }
-}
-
-function supprimerMeteo() {
-    document.getElementById("widgetMeteo").remove();
 }

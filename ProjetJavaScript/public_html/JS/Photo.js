@@ -20,5 +20,11 @@ function appelPhoto() {
 }
 
 function supprimerPhoto() {
-    document.getElementById("widgetPhoto").remove();
+    $("#widgetPhoto").click(function(){
+        $("#widgetPhoto").hide();
+    });
+}
+
+function AfficherPhotos() {
+    $("#widgetPhoto").show();
 }
