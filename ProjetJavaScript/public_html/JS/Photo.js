@@ -11,9 +11,15 @@ function appelPhoto() {
         tagmode: "any",
         format : "json"}).done(function(reponse)
     {
+        if(document.getElementById('flickr')!=null)
+        {
+            parent = document.getElementById('flickr').parentNode;
+            document.getElementById('flickr').parentNode.removeChild(document.getElementById('flickr'));
+        }
         var image = reponse.items[0].media.m;
         var img = document.createElement('img');
         img.src = image;
+        img.id = 'flickr';
         document.getElementById('photo').appendChild(img);
 
     });
