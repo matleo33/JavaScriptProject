@@ -16,10 +16,11 @@ and open the template in the editor.
         <script src ="JS/Sport.js"></script>
         <script src ="JS/Twitter.js"></script>
         <script src ="JS/Youtube.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src ="JS/Widgets.js"></script>
 
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">        
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     </head>
     <body onload="appelSport();window.setInterval(affichageHeureB,1000)">
     <nav class="navbar navbar-primary">
@@ -59,7 +60,7 @@ and open the template in the editor.
             </li>
         </ul>
     <div id="contain" class="container">
-        <div id="widgetTemps" class="col-md-3">
+        <div id="widgetTemps" class="col-md-3" onclick="move()">
             <div class="panel panel-primary">
 
                 <div class="panel-heading clearfix">
@@ -72,7 +73,7 @@ and open the template in the editor.
             </div>
         </div>
 
-        <div id="widgetMeteo" class="col-md-3">
+        <div id="widgetMeteo" class="col-md-3" onclick="move()">
             <div  class="panel panel-primary">
                 <div class="panel-heading">
                     Meteo
@@ -89,7 +90,7 @@ and open the template in the editor.
             </div>
         </div>
 
-        <div id="widgetPhoto" class="col-md-4">
+        <div id="widgetPhoto" class="col-md-4" onclick="move()">
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     Photo
@@ -97,7 +98,7 @@ and open the template in the editor.
                 </div>
                 <div class="panel-body">
                     <input type="text" name="recherchePhoto" id="searchPhoto">
-                    <input id="buttonPhoto" type="button" onclick="appelPhoto()" value="Les photos"><br>
+                    <input id="buttonPhoto" type="button" onclick="appelPhoto()" value="Recherche photo"><br>
                 </div>
                 <div id="photo" class="panel-body">
                     <img id="flickr" src="" />
@@ -105,7 +106,7 @@ and open the template in the editor.
             </div>
         </div>
 
-        <div id="widgetSport" class="col-md-3">
+        <div id="widgetSport" class="col-md-3" onclick="move()">
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     Sport
@@ -119,7 +120,7 @@ and open the template in the editor.
                 </div>
             </div>
         </div>
-        <div id="widgetMaps" class="col-md-6">
+        <div id="widgetMaps" class="col-md-6" onclick="move()">
             <div class="panel panel-primary">
                 <div class="panel-heading clearfix">
                     Carte
@@ -144,7 +145,7 @@ and open the template in the editor.
                 </div>
             </div>
         </div>
-        <div id="widgetTwitter" class="col-md-4">
+        <div id="widgetTwitter" class="col-md-4" onclick="move()">
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     Twitter
@@ -159,7 +160,7 @@ and open the template in the editor.
             </div>
         </div>
 
-        <div id="widgetYoutube" class="col-md-7">
+        <div id="widgetYoutube" class="col-md-7" onclick="move()">
             <div  class="panel panel-primary">
                 <div class="panel-heading">
                     Youtube
@@ -175,6 +176,7 @@ and open the template in the editor.
             </div>
         </div>
     </div>
+        <img src="Img/poubelle.jpg" alt="une poubelle" id="poubelle"/>
 
     </body>
 </html>
